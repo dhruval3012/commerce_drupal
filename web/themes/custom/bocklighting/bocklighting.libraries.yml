@@ -1,0 +1,20 @@
+global-styling:
+  css:
+    component:
+      css/style.css: {}
+      css/jquery.mCustomScrollbar.min.css: {}
+      # css/bootstrap/bootstrap.css: {}
+      # css/bootstrap/bootstrap.min.css: {}
+
+  js: 
+    # js/all.min.js: {}
+    js/bootstrap.min.js: {}
+    js/jquery.mCustomScrollbar.min.js: {}
+    js/masonry/masonry.pkgd.js: {}
+    js/masonry/masonry.pkgd.min.js: {}
+    js/thirdparty/owl.carousel.min.js: {}
+    js/theme.js: {}
+
+  # css:
+    # component:
+      # //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}

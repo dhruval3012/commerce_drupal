@@ -1,0 +1,47 @@
+	{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+  <div class="portfolio-wrap text-center bg-sky-light">
+    <div class="container">
+      <div class="portfolio-content">
+        {% for row in rows %}
+          <div class="grid-3 item">
+    				{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_image_portfolio }}'] }}
+    				<div class="body-content">
+    					<span>
+    						{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_date_portfolio }}'] }}
+    					</span>
+    					<h2 class="title">
+    						{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}
+    					</h2>
+    					<p>
+    						{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_description_portfolio }}'] }}
+    					</p>
+    				</div>
+    				<a href="" class="btn btn-plain">
+    					{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_view_detail_portfolio }}'] }}
+    				</a>
+    			</div>          		
+        {% endfor %}
+      </div>
+    </div>
+  </div>

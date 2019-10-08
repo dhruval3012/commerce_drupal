@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'Custom BockLighting'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_fourth: 'Footer Fourth'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - bocklighting/bootstrap_cdn
+  - bocklighting/global-styling
